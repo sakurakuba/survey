@@ -1,0 +1,186 @@
+[
+{
+    "model": "survey.poll",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-07-30T09:29:02.293Z",
+        "updated_at": "2022-07-30T09:29:02.293Z",
+        "poll_question": "What is your favorite program language?"
+    }
+},
+{
+    "model": "survey.poll",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-07-30T09:36:23.083Z",
+        "updated_at": "2022-07-30T09:36:23.083Z",
+        "poll_question": "Do you agree with Presidents course?"
+    }
+},
+{
+    "model": "survey.poll",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-07-30T09:37:41.532Z",
+        "updated_at": "2022-07-30T09:37:41.532Z",
+        "poll_question": "Coffee?"
+    }
+},
+{
+    "model": "survey.poll",
+    "pk": 5,
+    "fields": {
+        "created_at": "2022-07-30T10:35:01.588Z",
+        "updated_at": "2022-07-30T10:35:01.588Z",
+        "poll_question": "test333"
+    }
+},
+{
+    "model": "survey.poll",
+    "pk": 6,
+    "fields": {
+        "created_at": "2022-07-30T10:37:41.953Z",
+        "updated_at": "2022-07-30T10:37:41.953Z",
+        "poll_question": "test444"
+    }
+},
+{
+    "model": "survey.poll",
+    "pk": 7,
+    "fields": {
+        "created_at": "2022-07-30T10:37:50.863Z",
+        "updated_at": "2022-07-30T10:37:50.863Z",
+        "poll_question": "test555"
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 1,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "Python",
+        "poll": 1
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 2,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "JavaScript",
+        "poll": 1
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 3,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "Go",
+        "poll": 1
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 4,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "Yes",
+        "poll": 2
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 5,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "No",
+        "poll": 2
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 6,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "Sure",
+        "poll": 3
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 7,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "Not now",
+        "poll": 3
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 8,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "Already",
+        "poll": 3
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 10,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "yes",
+        "poll": 7
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 11,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "maybe",
+        "poll": 7
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 12,
+    "fields": {
+        "created_at": "2022-07-30T11:53:54.325Z",
+        "updated_at": "2022-07-30T11:53:54.337Z",
+        "choice_text": "no",
+        "poll": 7
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 15,
+    "fields": {
+        "created_at": "2022-07-30T12:08:25.091Z",
+        "updated_at": "2022-07-30T12:08:25.091Z",
+        "choice_text": "mmm",
+        "poll": 7
+    }
+},
+{
+    "model": "survey.listchoice",
+    "pk": 16,
+    "fields": {
+        "created_at": "2022-07-30T12:09:47.387Z",
+        "updated_at": "2022-07-30T12:27:08.239Z",
+        "choice_text": "xxxx",
+        "poll": 7
+    }
+}
+]
