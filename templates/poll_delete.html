@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4>Delete Poll</h4>
+<form action="" method="post">
+    {% csrf_token %}
+    <h4>Please, confirm deletion of this Poll "{{ poll.poll_question }}"? </h4>
+    <button type="submit" style="display: inline-block">Yes</button>
+    <button type="submit" style="display: inline"><a href="{% url "poll_view" poll.pk %}">No</a></button>
+    </form>
+{% endblock %}

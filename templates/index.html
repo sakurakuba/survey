@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block nav %}
 <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Create new Poll</a>
+    <a class="nav-link active" aria-current="page" href="{% url "poll_create" %}">Create new Poll</a>
 </li>
     <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">not yet ready</a>
@@ -12,7 +12,7 @@
     <br/>
     {% for pol in polls %}
 <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action">
+  <a href="{% url "poll_view" pol.pk %}" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">{{ pol.poll_question }}</h5>
       <small>dd</small>
