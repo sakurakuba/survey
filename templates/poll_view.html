@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block nav %}
 <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Create new Option</a>
+    <a class="nav-link active" aria-current="page" href="{% url "option_add" poll.pk %}">Add your Answer/Option</a>
 </li>
     <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="{% url "poll_update" poll.pk %}">Update Poll</a>
@@ -16,22 +16,19 @@
     <dl class="row">
   <dt class="col-sm-3">Poll question:</dt>
   <dd class="col-sm-9">{{ poll.poll_question }}</dd>
-    <dt class="col-sm-3">Please chose your answer:</dt>
+    <dt class="col-sm-3">Poll answers:</dt>
         <br/>
-    {% for option in poll.polls.all %}
+    {% for option in options %}
 <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action">
+  <div class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">{{ option.choice_text }}</h5>
-      <small>ee</small>
+      <small><a href="{% url "option_delete" option.pk %}">Delete answer</a></small>
     </div>
-        <p class="mb-1">ee</p>
-  </a>
+        <p class="mb-1"><a href="{% url "option_update" option.pk %}">Update answer</a></p>
+  </div>
     {% endfor %}
 </div>
-    {% if is_paginated %}
-    {% include "partial/pagination.html" %}
-    {% endif %}
 
 </dl>
 {% endblock %}

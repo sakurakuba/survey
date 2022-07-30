@@ -5,10 +5,16 @@ from django.urls import reverse
 from django.utils.datetime_safe import date
 
 
-class Poll(models.Model):
-    poll_question = models.CharField(max_length=100, verbose_name='Poll question')
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Created date')
+class BaseModel(models.Model):
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Create date')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Updated date')
+
+    class Meta:
+        abstract = True
+
+
+class Poll(BaseModel):
+    poll_question = models.CharField(max_length=100, verbose_name='Poll question')
 
     def __str__(self):
         return f"{self.poll_question}"
@@ -22,7 +28,7 @@ class Poll(models.Model):
         verbose_name_plural = 'Polls'
 
 
-class ListChoice(models.Model):
+class ListChoice(BaseModel):
     choice_text = models.CharField(max_length=100, verbose_name='Choice text')
     poll = models.ForeignKey("survey.Poll", on_delete=models.CASCADE, related_name='polls', verbose_name='Poll')
 

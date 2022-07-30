@@ -1,8 +1,5 @@
 from django import forms
-from django.forms import widgets
-from django.forms import ModelMultipleChoiceField
-
-from .models import Poll
+from .models import Poll, ListChoice
 
 
 class PollForm(forms.ModelForm):
@@ -11,15 +8,10 @@ class PollForm(forms.ModelForm):
         fields = ["poll_question"]
 
 
-# class PollForm(forms.ModelForm):
-#     class Meta:
-#         model = Poll
-#         fields = ["poll_question"]
-#         widgets = {
-#             "type": widgets.CheckboxSelectMultiple,
-#             "description": widgets.Textarea(attrs={"placeholder": "please add text here"})
-#         }
-
+class OptionsForm(forms.ModelForm):
+    class Meta:
+        model = ListChoice
+        fields = ["choice_text"]
 
 
 
